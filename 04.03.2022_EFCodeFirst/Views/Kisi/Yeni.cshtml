@@ -1,0 +1,33 @@
+﻿@model Kisiler
+@{
+    ViewBag.Title = "Yeni";
+}
+
+<h2>Yeni Kisi</h2>
+@using (Html.BeginForm())
+{
+<div class="input-group">
+    <span class="input-group-addon"> Ad</span>
+    @Html.TextBoxFor(x => x.Ad, new { @class = "form-control", placeholder = "Yeni Kişi" })
+    @*<input type="text" class="form-control" placeholder="Yeni Kişi"/>*@
+</div>
+<br />
+<div class="input-group">
+    <span class="input-group-addon"> Soyad</span>
+    @Html.TextBoxFor(x => x.Soyad, new { @class = "form-control", placeholder = "Yeni Kişi" })
+    @*<input type="text" class="form-control" placeholder="Yeni Kişi"/>*@
+</div>
+<br />
+<div class="input-group">
+    <span class="input-group-addon"> Yas</span>
+    @Html.TextBoxFor(x => x.Yas, new { @class = "form-control", placeholder = "Yeni Kişi" })
+    @*<input type="text" class="form-control" placeholder="Yeni Kişi"/>*@
+</div>
+<br />
+
+<div class="input-group">
+
+    <input type="submit" value="Kaydet" class="btn btn-success"/>
+
+</div>
+}
