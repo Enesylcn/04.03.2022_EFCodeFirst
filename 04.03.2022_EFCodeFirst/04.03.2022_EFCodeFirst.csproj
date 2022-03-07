@@ -143,6 +143,10 @@
     <Content Include="Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Views\Kisi\Yeni.cshtml" />
     <Content Include="Views\Adres\Yeni.cshtml" />
+    <Content Include="Views\Kisi\Duzenle.cshtml" />
+    <Content Include="Views\Adres\Duzenle.cshtml" />
+    <Content Include="Views\Kisi\Sil.cshtml" />
+    <Content Include="Views\Adres\Sil.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

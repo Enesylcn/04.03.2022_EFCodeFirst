@@ -1,14 +1,14 @@
 ﻿@model Kisiler
 @{
-    ViewBag.Title = "Yeni";
+    ViewBag.Title = "Kişi Düzenle";
 }
 
-<h2>Yeni Kisi</h2>
+<h2>Kisi Düzenle</h2>
 @using (Html.BeginForm())
 {
     <div class="input-group">
         <span class="input-group-addon"> Ad</span>
-        @Html.TextBoxFor(x => x.Ad, new { @class = "form-control", placeholder = "Kişi Adı Giriniz",@required="required"})
+        @Html.TextBoxFor(x => x.Ad, new { @class = "form-control", placeholder = "Kişi Adı Giriniz", @required = "required" })
         @*<input type="text" class="form-control" placeholder="Yeni Kişi"/>*@
     </div>
     <br />
@@ -20,7 +20,7 @@
     <br />
     <div class="input-group">
         <span class="input-group-addon"> Yas</span>
-        @Html.TextBoxFor(x => x.Yas, new { @class = "form-control", placeholder = "Yaşı Giriniz", @type = "number", min = 1})
+        @Html.TextBoxFor(x => x.Yas, new { @class = "form-control", placeholder = "Yaşı Giriniz", @type = "number", min = 1 })
         @*<input type="text" class="form-control" placeholder="Yeni Kişi"/>*@
     </div>
     <br />
@@ -42,3 +42,5 @@
         }
     </div>
 }
+
+

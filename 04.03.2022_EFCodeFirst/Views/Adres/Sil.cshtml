@@ -1,0 +1,36 @@
+﻿@model Adresler
+@{
+    ViewBag.Title = "Adres Sil";
+}
+
+<h2>Adres Sil</h2>
+<hr />
+<p>Aşağıdaki adres Silinecektir !</p>
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td><b>Kişi Ad:</b></td>
+            <td><b>@Model.Kisi.Ad</b></td>
+        </tr>
+        <tr>
+            <td><b>Kişi Soyad:</b></td>
+            <td><b>@Model.Kisi.Soyad</b></td>
+        </tr>
+        <tr>
+            <td><b>Adres:</b></td>
+            <td><b>@Model.AdresTanim</b></td>
+        </tr>
+    </table>
+    <div class="input-group">
+
+        <input type="submit" value="Sil" class="btn btn-danger" />
+
+
+    </div>
+
+}
+
+
+
+

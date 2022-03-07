@@ -22,6 +22,8 @@
             @foreach (var Kisi in Model.Kisiler)
             {
         <li class="list-group-item">
+            @Html.ActionLink("Düzenle", "Duzenle", "Kisi",new {kisiid=Kisi.ID}, new { @class = "btn btn-warning btn-xs" })
+            @Html.ActionLink("Sil", "Sil", "Kisi", new { kisiid = Kisi.ID }, new { @class = "btn btn-danger btn-xs" })
             <span class="glyphicon glyphicon-user red">
             </span>
             @("Ad Soyad="+Kisi.Ad+" "+Kisi.Soyad)
@@ -41,10 +43,12 @@
             </li>
             @foreach (var adres in Model.Adresler)
             {
-                <li class="list-group-item">
-                    <span class="glyphicon glyphicon-home green"></span>
-                    @("Adresler="+adres.AdresTanim) (<i> @(adres.Kisi.Ad+""+adres.Kisi.Soyad)</i>)
-                </li>
+        <li class="list-group-item">
+            @Html.ActionLink("Düzenle", "Duzenle", "Adres", new { adresid = adres.ID }, new { @class = "btn btn-warning btn-xs" })
+            @Html.ActionLink("Sil", "Sil", "Adres", new { adresid = adres.ID }, new { @class = "btn btn-danger btn-xs" })
+            <span class="glyphicon glyphicon-home green"></span>
+            @("Adresler="+adres.AdresTanim) (<i> @(adres.Kisi.Ad+""+adres.Kisi.Soyad)</i>)
+        </li>
             }
         </ul>
     </div>
